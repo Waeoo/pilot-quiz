@@ -1,3 +1,9 @@
 body {
     background: lightblue;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Vollkorn', serif;
+}
+
+.heading {
+    font: bold;
 }
