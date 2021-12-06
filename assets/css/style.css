@@ -6,8 +6,25 @@ body {
 
 .heading {
     font: bold;
+    text-align: center;
 }
 
 .landing-area {
-    background: red;
+    background-color: #147abe;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.input-name {
+    text-align: center;
+}
+
+.start-quiz {
+    text-align: center;
 }

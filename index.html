@@ -13,10 +13,12 @@
 <body>
     <h1 class="heading">Pilot Quiz</h1>
     <div class="landing-area">
-        <div><h2>Welcome to the Pilot Quiz! Please enter your name before starting the quiz.</h2>
+        <div class="input-name"><h2>Welcome to the Pilot Quiz! Please enter your name before starting the quiz.</h2>
         <input id="name-box" type="text">
         </div>
-        <button class="btn btn--grey" href="./quiz">Start the quiz</button>
+        <div class="start-quiz">
+            <button data-type="submit" onclick="location.href='quiz.html';" class="btn btn--grey">Start the quiz</button>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
