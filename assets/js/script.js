@@ -1,15 +1,79 @@
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+
+const questionAreaElement = document.getElementById("question-area");
+
+startButton.addEventListener("click", startGame);
+
 const question = document.querySelector("#question");
 
+const questionElement = document.getElementById("question");
+const answerButtonsElement = document.getElementById("answer-buttons");
 
-let questions = [
+let shuffledQuestions;
+let currentQuestionIndex;
+
+
+
+//const scorePoints = 100;
+//const maxQuestions = 4;
+
+function startGame() {
+
+    startButton.classList.add("hide");
+    questionAreaElement.classList.remove("hide");
+    //let randomNumber = Math.floor(Math.random() * 25) + 1;
+    //questionCounter = 0;
+    //score = 0;
+    availableQuestions = questions.length;
+    shuffledQuestions = questions.sort(() => Math.floor(Math.random() * 25) + 1);
+    currentQuestionIndex = 0;
+    setNewQuestion();
+}
+
+function setNewQuestion() {
+    resetQuestions()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+        answerButtonsElement.appendChild(button);
+    })
+}
+
+function resetQuestions() {
+    nextButton.classList.add("hide");
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild;
+        
+    }
+}
+
+function selectAnswer(e) {
+
+}
+
+const questions = [
     {
         question: "What does CPL mean?",
-        choice1: "Commercial Pilot License",
-        choice2: "Can Pilots Land?",
-        choice3: "Clearance Prior Landing",
-        choice4: "Caution Parachute Location",
-        answer: "Commercial Pilot License",
+        answers: [
+            { text: "Commercial Pilot License", correct: true},
+            { text: "Can Pilots Land?", correct: false},
+            { text: "Clearance Prior Landing", correct: false},
+            { text: "Caution Parachute Location", correct: false},
+        ]        
     },
+]
+/**     
     {
         question: "In which of the following weather conditions can you expect the lowest visibility?",
         choice1: "Haze",
@@ -84,13 +148,4 @@ let questions = [
     }
 ]
 
-const scorePoints = 100;
-const maxQuestions = 4;
-
-function startGame() {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = questions.length;
-    getNewQuestion();
-}
-
+*/
