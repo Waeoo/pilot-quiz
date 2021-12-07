@@ -3,9 +3,7 @@ const nextButton = document.getElementById("next-btn");
 
 const questionAreaElement = document.getElementById("question-area");
 
-startButton.addEventListener("click", startGame);
-
-const question = document.querySelector("#question");
+//const question = document.querySelector("#question");
 
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
@@ -13,21 +11,27 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 let shuffledQuestions;
 let currentQuestionIndex;
 
+startButton.addEventListener("click", startGame);
+nextButton.addEventListener("click", () => {
+    currentQuestionIndex++
+    setNewQuestion()
+  })
+
+
 
 
 //const scorePoints = 100;
 //const maxQuestions = 4;
 
 function startGame() {
-
     startButton.classList.add("hide");
-    questionAreaElement.classList.remove("hide");
     //let randomNumber = Math.floor(Math.random() * 25) + 1;
     //questionCounter = 0;
     //score = 0;
-    availableQuestions = questions.length;
+    //availableQuestions = questions.length;
     shuffledQuestions = questions.sort(() => Math.floor(Math.random() * 25) + 1);
     currentQuestionIndex = 0;
+    questionAreaElement.classList.remove("hide");
     setNewQuestion();
 }
 
@@ -53,7 +57,7 @@ function showQuestion(question) {
 function resetQuestions() {
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild;
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
         
     }
 }
