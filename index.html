@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Pilot Quiz</title>
 </head>
 <body>
     <h1 class="heading">Pilot Quiz</h1>
     <div class="landing-area">
-        <div class="input-name"><h2>Welcome to the Pilot Quiz! Please enter your name before starting the quiz.</h2>
-        <input id="name-box" type="text">
+        <div class="input-name">
+            <h2>Welcome to the Pilot Quiz! Please enter your name before starting the quiz.</h2>
+            <input id="name-box" type="text">
         </div>
-        <div class="start-quiz">
-            <button data-type="submit" onclick="location.href='quiz.html';" class="btn btn--grey">Start the quiz</button>
+        <div id="start-quiz" class="start-quiz hide">
+            <a href='quiz.html' class="btn btn--grey">Start the quiz</a>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
