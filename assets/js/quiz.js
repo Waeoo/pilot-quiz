@@ -1,17 +1,18 @@
 /* jshint esversion: 8 */
-
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
-
 const questionAreaElement = document.getElementById("question-area");
-
-//const question = document.querySelector("#question");
-
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 
 let shuffledQuestions;
 let currentQuestionIndex;
+let correctAnswer = 0;
+let wrongAnswer = 0;
+
+//let nameBox = document.getElementById("nameBox");
+//const question = document.querySelector("#question");
+//let nameBox.innerHTML = document.getElementById("name-box");
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -37,9 +38,28 @@ function startGame() {
     setNewQuestion();
 }
 
+/* function changeText(nameBox){
+    var element = document.getElementById("name-box");
+    element.innerHTML = "Hello World!";
+}
+*/
 function setNewQuestion() {
     resetQuestions();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    if (currentQuestionIndex <= 9) {
+        currentQuestionIndex++;
+        showQuestion(shuffledQuestions[currentQuestionIndex]);
+    } else {
+        endGame();
+    }
+    console.log = function(message) {
+        document.getElementById("correct").innerHTML = message;
+    };
+    console.log('correct answers: ' + correctAnswer);
+    
+    console.log = function(message) {
+        document.getElementById("wrong").innerHTML = message;
+    };
+    console.log('wrong answers: ' + wrongAnswer);
 }
 
 function showQuestion(question) {
@@ -74,8 +94,13 @@ function selectAnswer(choice) {
     if (shuffledQuestions.length > currentQuestionIndex +1) {
         nextButton.classList.remove("hide");
     } else {
-        startButton.innerText = "Restart"
+        startButton.innerText = "Restart";
         startButton.classList.remove("hide");
+    }
+    if (correct) {
+        correctAnswer++;
+    } else {
+        wrongAnswer++;
     }
 }
 
@@ -92,4 +117,8 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove("correct");
     element.classList.remove("wrong");
+}
+
+function endGame() {
+
 }

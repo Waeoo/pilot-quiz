@@ -83,3 +83,11 @@ body {
 .hide {
     display: none;
 }
+
+#correct {
+    color: red;
+}
+
+#wrong {
+    color: red;
+}
