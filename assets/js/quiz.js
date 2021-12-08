@@ -60,11 +60,36 @@ function resetQuestions() {
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-        
     }
 }
 
-function selectAnswer(e) {
-
+function selectAnswer(choice) {
+    const correctButton = choice.target;
+    const correct = correctButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    // reuseable array converted
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
+    if (shuffledQuestions.length > currentQuestionIndex +1) {
+        nextButton.classList.remove("hide");
+    } else {
+        startButton.innerText = "Restart"
+        startButton.classList.remove("hide");
+    }
 }
 
+function setStatusClass(element, correct) {
+    //clear the set status of the element
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add("correct");
+    } else {
+        element.classList.add("wrong");
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
+}
