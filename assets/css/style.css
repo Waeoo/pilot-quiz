@@ -49,6 +49,12 @@ body {
     color: white;
 }
 
+#question {
+    font-size: 2rem;
+    font: 400;
+    text-align: center;
+}
+
 .controls {
     text-align: center;
     padding: 10px;
@@ -85,7 +91,7 @@ body {
 }
 
 #correct {
-    color: red;
+    color: green;
 }
 
 #wrong {
