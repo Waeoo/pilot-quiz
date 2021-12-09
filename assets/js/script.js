@@ -1,6 +1,7 @@
 /* jshint esversion: 8 */
 let startQuiz = document.getElementById("start-quiz");
 let nameBox = document.getElementById("name-box");
+localStorage.setItem("nameBox", nameBox);
 
 nameBox.addEventListener("input", validateInput);
 

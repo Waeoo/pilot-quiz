@@ -17,6 +17,10 @@ body {
     text-align: center;
 }
 
+#head2 {
+    text-align: center;
+}
+
 .landing-area, .quiz-area {
     background-color: #147abe;
     box-sizing: border-box;
@@ -107,4 +111,8 @@ body {
     margin: 0 auto;
     border-radius: 5px;
     /* box-shadow: 0 0 10px 2px; */
+}
+
+#result {
+    color: black;
 }

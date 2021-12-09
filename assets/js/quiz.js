@@ -1,14 +1,19 @@
 /* jshint esversion: 8 */
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
+const head2 = document.getElementById("head2");
 const questionAreaElement = document.getElementById("question-area");
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 
+let startQuiz = document.getElementById("start-quiz");
 let shuffledQuestions;
 let currentQuestionIndex = 0;
 let correctAnswer = 0;
 let wrongAnswer = 0;
+let canAnswer = false;
+
+//document.getElementById("result").innerHTML = localStorage.getItem(nameBox);
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -18,9 +23,12 @@ nextButton.addEventListener("click", () => {
 
 function startGame() {
     startButton.classList.add("hide");
+    head2.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionAreaElement.classList.remove("hide");
+    clearScoreBoard();
+    scoreBoard();
     setNewQuestion();
 }
 
@@ -56,6 +64,7 @@ function showQuestion(question) {
 }
 
 function resetQuestions() {
+    canAnswer = true;
     nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
@@ -82,12 +91,14 @@ function selectAnswer(choice) {
     } else {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
-        clearScoreBoard();
+        startQuiz.classList.remove("hide");
     }
-    if (correct) {
+    if (correct && canAnswer) {
         correctAnswer++;
-    } else {
+        canAnswer = false;
+    } else if (canAnswer) {
         wrongAnswer++;
+        canAnswer = false;
     }
     scoreBoard();
 }
