@@ -90,4 +90,97 @@ const questions = [
             { text: "Gravity", correct: false},
         ]        
     },
+    {
+        question: '"G-force" refers to what?"',
+        choices: [
+            { text: "A Jedi warplane trick", correct: false},
+            { text: "Warp capability", correct: false},
+            { text: "Force that act upon the aircraft body", correct: false},
+            { text: "The forces a pilot endures during high-speed maneuvering", correct: true},
+        ]        
+    },
+    {
+        question: "The troposphere is the:",
+        choices: [
+            { text: "Inner layer of the atmoshere", correct: true},
+            { text: "Middle layer of the atmosphere", correct: false},
+            { text: "Outer layer of the atmosphere", correct: false},
+            { text: "Upper layer of the atmosphere", correct: false},
+        ]        
+    },
+    {
+        question: "An approaching aircraft that is on a constant bearing represents:",
+        choices: [
+            { text: "The least risk of collision", correct: false},
+            { text: "Absolutely no risk of collision", correct: true},
+            { text: "The greatest risk of collision", correct: false},
+            { text: "Moderate risk of collision", correct: false},
+        ]        
+    },
+    {
+        question: "What do the floor pedals in a cockpit control?",
+        choices: [
+            { text: "Engine power", correct: false},
+            { text: "Airspeed", correct: false},
+            { text: "Rudder", correct: true},
+            { text: "Height", correct: false},
+        ]        
+    },
+    {
+        question: "What's the purpose of an altimeter?",
+        choices: [
+            { text: "To measure height", correct: true},
+            { text: "To reduce drag", correct: false},
+            { text: "To reduce air pressure", correct: false},
+            { text: "To measure pressure", correct: false},
+        ]        
+    },
+    {
+        question: "The curve on top of an airplane wing helps to do what?",
+        choices: [
+            { text: "Offers more space for missiles", correct: false},
+            { text: "Decreases pressure on top of the wing", correct: true},
+            { text: "Controls yaw", correct: false},
+            { text: "Makes it look cooler", correct: false},
+        ]        
+    },
+    {
+        question: "What do the ailerons control?",
+        choices: [
+            { text: "Spirals", correct: false},
+            { text: "Dive", correct: false},
+            { text: "Speed", correct: false},
+            { text: "Roll", correct: true},
+        ]        
+    },
+    {
+        question: "What happens to air pressure as your altitude climbs?",
+        choices: [
+            { text: "It increases", correct: false},
+            { text: "Variable", correct: false},
+            { text: "It decreases", correct: true},
+            { text: "It stays the same", correct: false},
+        ]        
+    },
+    {
+        question: "What happens when the pilot pushes the throttle forward?",
+        choices: [
+            { text: "Engine power increases", correct: true},
+            { text: "Pilot's seat ejects", correct: false},
+            { text: "Wing angles drop", correct: false},
+            { text: "The doors lock", correct: false},
+        ]        
+    },
+    {
+        question: "What part of the plane creates thrust?",
+        choices: [
+            { text: "Yoke", correct: false},
+            { text: "Wings", correct: false},
+            { text: "Midsection", correct: false},
+            { text: "Engines", correct: true},
+        ]        
+    },
 ]
+
+
+

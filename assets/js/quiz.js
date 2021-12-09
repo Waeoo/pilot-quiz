@@ -28,10 +28,6 @@ nextButton.addEventListener("click", () => {
 
 function startGame() {
     startButton.classList.add("hide");
-    //let randomNumber = Math.floor(Math.random() * 25) + 1;
-    //questionCounter = 0;
-    //score = 0;
-    //availableQuestions = questions.length;
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionAreaElement.classList.remove("hide");
@@ -90,18 +86,20 @@ function selectAnswer(choice) {
     // reuseable array converted
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
     if (shuffledQuestions.length > currentQuestionIndex +1) {
         nextButton.classList.remove("hide");
     } else {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
     }
+
     if (correct) {
         correctAnswer++;
     } else {
         wrongAnswer++;
     }
+    
 }
 
 function setStatusClass(element, correct) {
@@ -120,5 +118,5 @@ function clearStatusClass(element) {
 }
 
 function endGame() {
-
+    questionItem.innerText = `Quiz Complete: correct = ${correctAnswer}, wrong = ${wrongAnswer}`;
 }
