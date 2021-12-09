@@ -69,7 +69,7 @@ function showQuestion(question) {
         }
         button.addEventListener("click", selectAnswer);
         answerButtonsElement.appendChild(button);
-    })
+    });
 }
 
 function resetQuestions() {
@@ -93,13 +93,11 @@ function selectAnswer(choice) {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
     }
-
     if (correct) {
         correctAnswer++;
     } else {
         wrongAnswer++;
     }
-    
 }
 
 function setStatusClass(element, correct) {
@@ -118,5 +116,5 @@ function clearStatusClass(element) {
 }
 
 function endGame() {
-    questionItem.innerText = `Quiz Complete: correct = ${correctAnswer}, wrong = ${wrongAnswer}`;
-}
+    /*questionItem.innerText = `Quiz Complete: correct = ${correctAnswer}, wrong = ${wrongAnswer}`; */
+} 

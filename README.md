@@ -1,108 +1,179 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pilot Quiz
 
-Welcome Waeoo,
+- This project was created to provide a Pilot Quiz with questions in relation to aviation for anyone to test themselves on their knowledge. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- The quiz is for anyone interested in aviation or want to take a quiz in relation to aviation regardless of interest.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Mockup](documentation/testing/mockup.png)
 
-## Gitpod Reminders
+## User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- As a new visitor visiting the site I want to early know what the site is about and refering to and to quickly discern if it is suitable for what I'm after.
 
-`python3 -m http.server`
+- As a general visitor I want to test my skills and  navigation and to the parts of releveance. 
+Learn and study the information provided and easily find the websites social links.
+Be able to contact anyone behind the website.
 
-A blue button should appear to click: _Make Public_,
+- As a returning visitor I want to see any updated information and redo the quiz as many times as I want.
 
-Another blue button should appear to click: _Open Browser_.
+## UX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Design concept was chosen in relation to aviation and the sites purpose of being in an direction of quiz.
 
-A blue button should appear to click: _Make Public_,
+### Color Scheme
 
-Another blue button should appear to click: _Open Browser_.
+- Described color scheme for `#539dc7`, `147abe`, `green`, `red`, `black`.
+- Colors used for this project are in relation to the sky, therefor with a blue direction and also from color tools [Color Tool](https://material.io/) to match eachother.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Typography
 
-To log into the Heroku toolbelt CLI:
+- I choose [Vollkorn](https://fonts.google.com/specimen/Vollkorn) due to the quiz purpose font selection.
+- For the icons used I choosed an aircraft picture for the favicon icon.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Wireframes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - [index.html](https://waeoo.github.io/pilot-quiz/index.html)
+  ![index](documentation/wireframes/landing_page.png)
 
-------
+  - [quiz.html](https://waeoo.github.io/pilot-quiz/quiz.html)
+  ![quiz](documentation/wireframes/quiz_page.png)
 
-## Release History
+## Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Existing Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __The Home page and welcome message__
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  - The home page include a welcoming message and asking the visitor to enter their name prior to taking the quiz.
+  - After a name has been entered the visitor can start the quiz.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Home Page](documentation/testing/welcome.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- __The Pilot Quiz page__
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - The Pilot Quiz page will allow the user to read and learn about the different well-researched adaptogens listed. 
+  - The user will find valueable information about the nine different adaptogens listed in order to spark intrest about one or more adaptogens. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Quiz page](documentation/testing/quiz.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Features Left to Implement
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Features that is left to implement are:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Category,
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Cateogry, 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- History,
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Testing has been performed in browsers such as Chrome, Brave, Firefox and Edge using developer tools to check responsiveness. Review responses have been asked and recieved in relation to different iOS and Android devices. No issues reported. Validator testing and compatibilites are listed below.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Validator Testing 
 
-------
+- HTML Validation (w3c)
+    
+  - [index.html](https://validator.w3.org/nu/?doc=https://waeoo.github.io/pilot-quiz/index.html)
+  - ![index](documentation/testing/index_validation.png)
 
-## FAQ about the uptime script
+  - [quiz.html](https://validator.w3.org/nu/?doc=https://waeoo.github.io/pilot-quiz/quiz.html)
+  - ![quiz](documentation/testing/quiz_validation.png)
 
-**Why have you added this script?**
+- CSS (w3c)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  - [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https://waeoo.github.io/pilot-quiz&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - ![style](documentation/testing/css_validation.png)
 
-**How will this affect me?**
+### Fixed Bugs
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Unfixed Bugs
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+At the moment there are no unfixed bugs discovered. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Browser compatibility
 
-**So….?**
+- Chrome
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![chrome](documentation/testing/chrome_index.png)
 
-**Can I opt out?**
+- Brave
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![brave](documentation/testing/brave_adaptogens.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Firefox
 
-**Anything more?**
+![firefox](documentation/testing/firefox_about.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Edge
 
----
+![edge](documentation/testing/edge_contact.png)
 
-Happy coding!
+### Responsiveness
+
+- Desktop
+
+![desktop](documentation/testing/chrome_index.png)
+
+- Tablet
+
+![tablet](documentation/testing/table_ipad_pro.png)
+
+- Mobile - Real life phone Samsung Internet on Samsung Galaxy S8+
+
+![home_page](documentation/testing/samsung_internet_home_page.jpg)
+![home_page_bottom](documentation/testing/samsung_internet_home_page_bottom.jpg)
+![adaptogens_upper](documentation/testing/samsung_internet_adaptogens_upper.jpg)
+![adaptogens_picture](documentation/testing/samsung_internet_adaptogens_picture.jpg)
+
+### Tested User Stories
+
+- As a new visitor:
+- At first sight you are presented with the home page feature welcome text, explaining what you can read and learn about. Also a picture of the Adaptogens book as clear reference. Through the presented information you intuitivly you can browse towards the Adaptogens link in the navigation feature in ordet to start learning about the different well-researched adaptogens.
+
+- As a general visitor:
+- Coming back to the site you can via the swift navigation feature navigate to for example the Adapotgens page and continue your reading and learning about the different well-researched adaptogens. Even further looking in to the About page feautre explaining what conclusions have been drawn and what defines an adaptogen.
+During the browsing and learning and in the event of looking for more content or information you are able to use the social media links feature in the footer section. In case of wanting to start a conversation and asking questions you can also navigate to the Contact page feature and fill out a form with your message.
+
+- As a returning visitor:
+- As a returning and perhaps frequent visitor I look for any new messages on the homepage. Check the Adaptogen page for any additional features. After having digested some learning material I have additional questions that needs answers and I navigate to the Contact page to fill out the form and send my message of questions seeking answers.
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+    * In the [GitHub repository](https://github.com/Waeoo/pilot-quiz), navigate to the Settings tab.
+    * From the Settings tab, scroll down until you see the 'Pages' button on the left.
+    * From the Source section drop-down menu, select the `Main` branch.
+    * Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - https://waeoo.github.io/pilot-quiz
+
+### Local Deployment
+
+To make a local copy of this project, you can clone it by typing the following in your IDE terminal:
+
+- `git clone https://github.com/Waeoo/pilot-quiz.git`
+
+Alternatively, if using Gitpod, you can click the green Gitpod button, or use [this link](https://gitpod.io/#https://github.com/Waeoo/pilot-quiz)
+
+
+## Technology Used
+
+The site Pilot Quiz was built using HTML5, CSS3 and Javascript.
+
+## Credits 
+
+### Content 
+
+- Research and code solutions, stackoverflow and w3schools were generally relied upon.
+
+### Media
+
+- No particular pictures have been used in this project.
+
+### Acknowledgements
+
+- Tim Nelson - Code Institute mentor who explained and guidance supported me effectively and with precision.
+- Mr. P - Tester and presenting different approaches and solutions.
+- Love Math project for inspiration.
+- Youtube tutorials

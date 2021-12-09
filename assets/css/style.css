@@ -1,5 +1,5 @@
 body {
-    background: lightblue;
+    background: #539dc7;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Vollkorn', serif;
     padding: 0;
@@ -106,5 +106,5 @@ body {
     width: fit-content;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
+    /* box-shadow: 0 0 10px 2px; */
 }
