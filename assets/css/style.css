@@ -54,8 +54,7 @@ body {
 }
 
 #question {
-    font-size: 1.5rem;
-    font: 400;
+    font-size: 1.75rem;
     text-align: center;
 }
 
@@ -115,4 +114,5 @@ body {
 
 #result {
     color: black;
+    margin: 10px 10px;
 }

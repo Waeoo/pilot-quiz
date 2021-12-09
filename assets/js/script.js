@@ -1,8 +1,6 @@
 /* jshint esversion: 8 */
 let startQuiz = document.getElementById("start-quiz");
-let nameBox = document.getElementById("name-box");
-localStorage.setItem("nameBox", nameBox);
-
+var nameBox = document.getElementById("name-box");
 nameBox.addEventListener("input", validateInput);
 
 function validateInput() {
@@ -12,4 +10,9 @@ function validateInput() {
     } else {
         startQuiz.classList.add("hide");
     }
+}
+
+function store() {
+    localStorage.setItem("nameBox", JSON.stringify(nameBox));
+    location.href = "quiz.html";
 }

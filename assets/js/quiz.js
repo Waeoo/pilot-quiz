@@ -13,7 +13,12 @@ let correctAnswer = 0;
 let wrongAnswer = 0;
 let canAnswer = false;
 
-//document.getElementById("result").innerHTML = localStorage.getItem(nameBox);
+function get () {
+    var nameBox = localStorage.getItem("nameBox");
+    //var nameBox = JSON.parse(nameBox);
+    console.log(nameBox);
+}
+    
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
