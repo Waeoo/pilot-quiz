@@ -17,6 +17,9 @@ Testing has been performed in browsers such as Chrome, Brave, Firefox and Edge u
   - [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https://waeoo.github.io/pilot-quiz&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   - ![style](documentation/testing/css_validation.png)
 
+- JSHINT
+
+
 ### Fixed Bugs
 
 ### Unfixed Bugs

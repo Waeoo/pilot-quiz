@@ -89,13 +89,20 @@ Alternatively, if using Gitpod, you can click the green Gitpod button, or use [t
 
 ## Technology Used
 
-The site Pilot Quiz was built using HTML5, CSS3 and Javascript.
+- The site Pilot Quiz was built using the following:
+
+* HTML5
+* CSS3
+* Javascript
+* Git
+* Gitpod
+* GitHub
 
 ## Credits 
 
 ### Content 
 
-- Research and code solutions, stackoverflow, youtube and w3schools were generally relied upon.
+- Research and code solutions, [stackoverflow](https://stackoverflow.com), [youtube](https://youtube.com) and [w3schools](https://www.w3schools.com) were generally relied upon.
 
 ### Media
 
