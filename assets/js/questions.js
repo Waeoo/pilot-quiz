@@ -1,4 +1,6 @@
 /* jshint esversion: 8 */
+
+// Quiz game questions
 const questions = [
     {
         question: "What does CPL mean?",
