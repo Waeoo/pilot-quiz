@@ -95,29 +95,29 @@ At the moment there are no unfixed bugs discovered.
 
 - Chrome
 
-![chrome](documentation/testing/chrome_index.png)
+![chrome](documentation/testing/desktop_google_chrome_index.png)
 
 - Brave
 
-![brave](documentation/testing/brave_adaptogens.png)
+![brave](documentation/testing/desktop_brave_index.png)
 
 - Firefox
 
-![firefox](documentation/testing/firefox_about.png)
+![firefox](documentation/testing/desktop_firefox_quiz.png)
 
 - Edge
 
-![edge](documentation/testing/edge_contact.png)
+![edge](documentation/testing/desktop_edge_quiz.png)
 
 ### Responsiveness
 
 - Desktop
 
-![desktop](documentation/testing/chrome_index.png)
+![desktop](documentation/testing/desktop_google_chrome_index.png)
 
 - Tablet
 
-![tablet](documentation/testing/table_ipad_pro.png)
+![tablet](documentation/testing/tablet_ipad_quiz.png)
 
 - Mobile - Real life phone Samsung Internet on Samsung Galaxy S8+
 
