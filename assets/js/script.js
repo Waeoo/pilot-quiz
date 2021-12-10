@@ -14,6 +14,7 @@ function validateInput() {
     }
 }
 
+// Store name input
 function store() {
     var nameB = document.getElementById("name-box").value;
     localStorage.setItem("nameB", nameB);
