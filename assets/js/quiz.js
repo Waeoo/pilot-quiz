@@ -16,7 +16,7 @@ let correctAnswer = 0;
 let wrongAnswer = 0;
 let canAnswer = false;
 
-//
+
 function get () {
     var nameBox = localStorage.getItem("nameBox");
     //var nameBox = JSON.parse(nameBox);
