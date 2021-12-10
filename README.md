@@ -121,10 +121,11 @@ At the moment there are no unfixed bugs discovered.
 
 - Mobile - Real life phone Samsung Internet on Samsung Galaxy S8+
 
-![home_page](documentation/testing/samsung_internet_home_page.jpg)
-![home_page_bottom](documentation/testing/samsung_internet_home_page_bottom.jpg)
-![adaptogens_upper](documentation/testing/samsung_internet_adaptogens_upper.jpg)
-![adaptogens_picture](documentation/testing/samsung_internet_adaptogens_picture.jpg)
+![index_page](documentation/testing/samsung_internet_adaptogens_upper.jpg)
+![index_page](documentation/testing/samsung_internet_adaptogens_picture.jpg)
+![quiz_page](documentation/testing/samsung_s8_google_chrome_quiz.jpg)
+![quiz_page](documentation/testing/samsung_s8_samsung_internet_quiz.jpg)
+
 
 ### Tested User Stories
 
