@@ -58,7 +58,6 @@ At the moment there are no unfixed bugs discovered.
 ![quiz_page](documentation/testing/samsung_s8_google_chrome_quiz.jpg)
 ![quiz_page](documentation/testing/samsung_s8_samsung_internet_quiz.jpg)
 
-
 ### Tested User Stories
 
 - As a new visitor:

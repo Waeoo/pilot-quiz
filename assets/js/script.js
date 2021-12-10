@@ -6,7 +6,6 @@ nameBox.addEventListener("input", validateInput);
 
 // Name to be entered will show the start quiz button in order to continue
 function validateInput() {
-    console.log(typeof(nameBox.value));
     if ( nameBox.value != null && nameBox.value != "") {
         startQuiz.classList.remove("hide");
     } else {
