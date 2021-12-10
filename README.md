@@ -10,11 +10,9 @@
 
 - As a new visitor visiting the site I want to early know what the site is about and refering to and to quickly discern if it is suitable for what I'm after.
 
-- As a general visitor I want to test my skills and  navigation and to the parts of releveance. 
-Learn and study the information provided and easily find the websites social links.
-Be able to contact anyone behind the website.
+- As a general visitor I want to test my skills on the quiz. 
 
-- As a returning visitor I want to see any updated information and redo the quiz as many times as I want.
+- As a returning visitor I want to see new set of questions and to further test my skills.
 
 ## UX
 
@@ -51,8 +49,8 @@ Be able to contact anyone behind the website.
 
 - __The Pilot Quiz page__
 
-  - The Pilot Quiz page will allow the user to read and learn about the different well-researched adaptogens listed. 
-  - The user will find valueable information about the nine different adaptogens listed in order to spark intrest about one or more adaptogens. 
+  - The Pilot Quiz page will allow the user to engage in a series of questions provide with multiple answers to choose from. 
+  - The user will get direct feedback on their choice of answer and a score will be taken in relation to if the answer was correct or wrong. 
 
 ![Quiz page](documentation/testing/quiz.png)
 
