@@ -73,10 +73,10 @@ Please see [TESTING.md](TESTING.md) for all documented testing.
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
-    * In the [GitHub repository](https://github.com/Waeoo/pilot-quiz), navigate to the Settings tab.
-    * From the Settings tab, scroll down until you see the 'Pages' button on the left.
-    * From the Source section drop-down menu, select the `Main` branch.
-    * Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* In the [GitHub repository](https://github.com/Waeoo/pilot-quiz), navigate to the Settings tab.
+* From the Settings tab, scroll down until you see the 'Pages' button on the left.
+* From the Source section drop-down menu, select the `Main` branch.
+* Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found here - https://waeoo.github.io/pilot-quiz
 

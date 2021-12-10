@@ -16,8 +16,8 @@ let correctAnswer = 0;
 let wrongAnswer = 0;
 let canAnswer = false;
 
+// var variables declared
 var username = localStorage.getItem("nameB");
-document.getElementById("result").innerHTML = username; 
 
 // Buttons to start and continue quiz
 startButton.addEventListener("click", startGame);
@@ -52,12 +52,17 @@ function scoreBoard() {
     console.log = function(message) {
         document.getElementById("correct").innerHTML = message;
     };
-    console.log('correct answers: ' + correctAnswer);
+    console.log('Correct answers: ' + correctAnswer);
     
     console.log = function(message) {
         document.getElementById("wrong").innerHTML = message;
     };
-    console.log('wrong answers: ' + wrongAnswer);
+    console.log('Wrong answers: ' + wrongAnswer);
+
+    console.log = function(message) {
+        document.getElementById("username").innerHTML = message;
+    };
+    console.log('Name: ' + username);
 }
 
 // Function to get questions from the question.js and show them
