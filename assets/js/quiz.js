@@ -16,13 +16,9 @@ let correctAnswer = 0;
 let wrongAnswer = 0;
 let canAnswer = false;
 
+var username = localStorage.getItem("nameB");
+document.getElementById("result").innerHTML = username; 
 
-function get () {
-    var nameBox = localStorage.getItem("nameBox");
-    //var nameBox = JSON.parse(nameBox);
-    console.log(nameBox);
-}
-    
 // Buttons to start and continue quiz
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {

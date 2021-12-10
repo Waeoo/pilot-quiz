@@ -55,22 +55,21 @@ At the moment there are no unfixed bugs discovered.
 
 ![index_page](documentation/testing/samsung_s8_google_chrome_index.jpg)
 ![index_page](documentation/testing/samsung_s8_samsung_internet_index.jpg)
-![quiz_page](documentation/testing/samsung_s8_google_chrome_quiz)
+![quiz_page](documentation/testing/samsung_s8_google_chrome_quiz.jpg)
 ![quiz_page](documentation/testing/samsung_s8_samsung_internet_quiz.jpg)
 
 
 ### Tested User Stories
 
 - As a new visitor:
-- At first sight you are presented with the home page feature welcome text, explaining what you can read and learn about. Also a picture of the Adaptogens book as clear reference. Through the presented information you intuitivly you can browse towards the Adaptogens link in the navigation feature in ordet to start learning about the different well-researched adaptogens.
+- At first sight you are presented with the home page featuring welcome text and asking you to enter your name. After entering your name a button appears to start the quiz.
 
-![home_page](documentation/testing/tested_user.jpg)
+![index_page](documentation/testing/desktop_google_chrome_index.png)
 
 - As a general visitor:
-- Coming back to the site you can via the swift navigation feature navigate to for example the Adapotgens page and continue your reading and learning about the different well-researched adaptogens. Even further looking in to the About page feautre explaining what conclusions have been drawn and what defines an adaptogen.
-During the browsing and learning and in the event of looking for more content or information you are able to use the social media links feature in the footer section. In case of wanting to start a conversation and asking questions you can also navigate to the Contact page feature and fill out a form with your message.
+- Coming back to the site you can enter your name, start the quiz and be presented with a new set of questions. You can after fininshing 10 questions either restart and take another set of questions or return back to landing page where you can enter a new name for the quiz.
 
-![home_page](documentation/testing/tested_user.jpg)
+![quiz_page](documentation/testing/desktop_edge_quiz.png)
 
 - As a returning visitor:
-- As a returning and perhaps frequent visitor I look for any new messages on the homepage. Check the Adaptogen page for any additional features. After having digested some learning material I have additional questions that needs answers and I navigate to the Contact page to fill out the form and send my message of questions seeking answers.
+- As a returning and perhaps frequent visitor I look for more questions to take and learn from. I'm looking for new features to be implemented and for the site to keep track of my scores.

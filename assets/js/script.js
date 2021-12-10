@@ -3,6 +3,7 @@
 let startQuiz = document.getElementById("start-quiz");
 var nameBox = document.getElementById("name-box");
 nameBox.addEventListener("input", validateInput);
+var nameB = document.getElementById("name-box").value;
 
 // Name to be entered will show the start quiz button in order to continue
 function validateInput() {
@@ -15,6 +16,6 @@ function validateInput() {
 }
 
 function store() {
-    localStorage.setItem("nameBox", JSON.stringify(nameBox));
+    localStorage.setItem.value("nameB", nameB);
     location.href = "quiz.html";
 }
