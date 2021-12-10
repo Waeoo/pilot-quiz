@@ -60,11 +60,11 @@ Be able to contact anyone behind the website.
 
 Features that is left to implement are:
 
-- Category,
+- Highscores
 
-- Cateogry, 
+- More questions
 
-- History,
+- Progress bar
 
 ## Testing 
 
@@ -131,9 +131,13 @@ At the moment there are no unfixed bugs discovered.
 - As a new visitor:
 - At first sight you are presented with the home page feature welcome text, explaining what you can read and learn about. Also a picture of the Adaptogens book as clear reference. Through the presented information you intuitivly you can browse towards the Adaptogens link in the navigation feature in ordet to start learning about the different well-researched adaptogens.
 
+![home_page](documentation/testing/tested_user.jpg)
+
 - As a general visitor:
 - Coming back to the site you can via the swift navigation feature navigate to for example the Adapotgens page and continue your reading and learning about the different well-researched adaptogens. Even further looking in to the About page feautre explaining what conclusions have been drawn and what defines an adaptogen.
 During the browsing and learning and in the event of looking for more content or information you are able to use the social media links feature in the footer section. In case of wanting to start a conversation and asking questions you can also navigate to the Contact page feature and fill out a form with your message.
+
+![home_page](documentation/testing/tested_user.jpg)
 
 - As a returning visitor:
 - As a returning and perhaps frequent visitor I look for any new messages on the homepage. Check the Adaptogen page for any additional features. After having digested some learning material I have additional questions that needs answers and I navigate to the Contact page to fill out the form and send my message of questions seeking answers.

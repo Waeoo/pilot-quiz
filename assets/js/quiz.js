@@ -34,6 +34,9 @@ function startGame() {
     questionAreaElement.classList.remove("hide");
     clearScoreBoard();
     scoreBoard();
+    if (currentQuestionIndex === 0) {
+        startQuiz.classList.add("hide");
+    }
     setNewQuestion();
 }
 
@@ -96,7 +99,10 @@ function selectAnswer(choice) {
     } else {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
-        startQuiz.classList.remove("hide");
+        if (currentQuestionIndex === 9) {
+            startQuiz.classList.remove("hide");
+        }
+        
     }
     if (correct && canAnswer) {
         correctAnswer++;
